@@ -11,9 +11,11 @@ public class Professor {
 
     private static Scanner scan = new Scanner(System.in);
 
-    public static void incluirProfessor() {
+    // Professor professor = new Professor();
+    
+    Professor professor = new Professor();
 
-        Professor professor = new Professor();
+    public void incluirProfessor() {
 
         System.out.print("Informe a matrícula do professor: ");
         professor.setMatricula(scan.nextLine());
@@ -21,7 +23,7 @@ public class Professor {
         System.out.print("Informe o nome do professor: ");
         professor.setNome(scan.nextLine());
 
-        incluirTelefonesProf(professor);
+        incluirTelefonesProf();
 
         System.out.print("Informe a quantidade de disciplinas do professor: ");
         int qtDisciplinas = scan.nextInt();
@@ -52,7 +54,7 @@ public class Professor {
         }
     }
 
-    public static void incluirTelefonesProf(Professor professor) {
+    public void incluirTelefonesProf() {
 
         System.out.print("Informe a quantidade de telefones do professor: ");
         int qtTelefones = scan.nextInt();

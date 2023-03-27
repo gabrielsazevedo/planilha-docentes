@@ -22,7 +22,8 @@ public class Menu {
                     break;
 
                 case 2:
-                    Professor.incluirProfessor();
+                    Professor menu = new Professor();
+                    menu.incluirProfessor();
                     break;
 
                 case 3:
