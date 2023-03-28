@@ -10,8 +10,6 @@ public class Professor {
     private static List<Professor> professores = new ArrayList<>();
 
     private static Scanner scan = new Scanner(System.in);
-
-    // Professor professor = new Professor();
     
     Professor professor = new Professor();
 
@@ -37,8 +35,6 @@ public class Professor {
             for (int j = 0; j < qtDisciplinas; j++) {
 
                 professor.setDisciplina(Disciplina.incluirDisciplina());
-                // System.out.println(disciplina.getDisciplinas().get(0));
-
                 professor.getDisciplinasProf().add(professor.disciplina);
 
             }
